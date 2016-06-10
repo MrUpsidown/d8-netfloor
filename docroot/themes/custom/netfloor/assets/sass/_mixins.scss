@@ -1,0 +1,10 @@
+/*!
+ * Copyright (c) 2016. Arnaud Marquis, Geneva | Zürich, Switzerland
+ */
+
+/* Mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}

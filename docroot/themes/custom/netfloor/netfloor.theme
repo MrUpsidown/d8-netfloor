@@ -1,0 +1,42 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ *
+ */
+
+function netfloor_preprocess_node(&$variables) {
+
+
+}
+
+function netfloor_preprocess_field(&$variables, $hook) {
+
+//  kint($variables);
+
+  $count = count($variables['items']);
+
+  switch ($count) {
+
+    case 2:
+      $bootstrap_columns = '6';
+      break;
+    case 3:
+      $bootstrap_columns = '4';
+      break;
+    case 4:
+      $bootstrap_columns = '3';
+      break;
+    default:
+      $bootstrap_columns = '12';
+      break;
+  }
+
+  $variables['bootstrap_columns'] = 'col-sm-' . $bootstrap_columns;
+  $variables['bootstrap_columns_count'] = $count;
+}

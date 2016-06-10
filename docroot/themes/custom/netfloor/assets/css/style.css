@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*
+* Custom overrides
+*/
+/*!
+ * Copyright (c) 2016. Arnaud Marquis, Geneva | Zürich, Switzerland
+ */
+/*!
+ * Copyright (c) 2016. Arnaud Marquis, Geneva | Zürich, Switzerland
+ */
+/* Mixin */
+/*!
+* Copyright (c) 2016. Arnaud Marquis, Geneva | Zürich, Switzerland
+*
+* NETfloor main stylesheet for "NETfloor" Bootstrap subtheme
+*/
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300");
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', Arial, Helvetica, Sans-Serif; }
+
+body {
+  background-color: white;
+  margin-top: 0; }
+
+body.toolbar-tray-open {
+  padding-top: 80px; }
+
+.ribbon-colors {
+  width: 100%;
+  height: 8px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+17,2989d8+17,f3f3f3+17,90278d+17,90278d+46,90278d+46,dddddd+46,dddddd+69,6b6f74+69 */
+  background: #ededed;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ededed 17%, #2989d8 17%, #f3f3f3 17%, #90278d 17%, #90278d 46%, #90278d 46%, #dddddd 46%, #dddddd 69%, #6b6f74 69%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ededed 17%, #2989d8 17%, #f3f3f3 17%, #90278d 17%, #90278d 46%, #90278d 46%, #dddddd 46%, #dddddd 69%, #6b6f74 69%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ededed 17%, #2989d8 17%, #f3f3f3 17%, #90278d 17%, #90278d 46%, #90278d 46%, #dddddd 46%, #dddddd 69%, #6b6f74 69%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#6b6f74', GradientType=1);
+  /* IE6-9 */ }
+  .ribbon-colors.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200; }
+
+.header-one {
+  padding: 50px 0; }
+
+.navbar-default .navbar-nav > li:not(:last-child) {
+  margin-right: 20px; }
+.navbar-default .navbar-nav > li > a {
+  background-color: #f3f3f3; }
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: #6b6f74;
+    color: #fff; }
+
+.logo-wrapper {
+  text-align: center;
+  margin: 100px 0; }
+
+.logo img {
+  max-width: 200px;
+  height: auto; }
+
+.navbar-default {
+  background-color: transparent;
+  border: 0; }
+
+.section-wrapper {
+  padding: 120px 0; }
+
+.footer {
+  border: 0; }
+
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-right: 0; } }
+
+/*# sourceMappingURL=style.css.map */

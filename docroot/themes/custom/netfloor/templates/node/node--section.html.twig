@@ -1,0 +1,11 @@
+{% set section_parallax = content.field_background ? 'scroll' : '' %}
+{% set section_parallax_class = content.field_background ? 'section-wrapper--image' : '' %}
+{% set section_parallax_image = content.field_background ? file_url(content.field_background['#items'].entity.uri.value) : '' %}
+
+<div class="section-wrapper {{ section_parallax_class }}" data-parallax="{{ section_parallax }}" data-image-src="{{ section_parallax_image }}" data-speed="0.8">
+    <div class="container">
+        <div class="row one-page">
+            {{ content.field_column }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+/*!
+* Copyright (c) 2016. Arnaud Marquis, Geneva | Zürich, Switzerland
+*
+* NETfloor main stylesheet for "NETfloor" Bootstrap subtheme
+*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300');
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', Arial, Helvetica, Sans-Serif;
+}
+
+body {
+  background-color: white;
+  margin-top: 0;
+}
+
+body.toolbar-tray-open {
+  padding-top: 80px;
+}
+
+.ribbon-colors {
+
+  width: 100%;
+  height: 8px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+17,2989d8+17,f3f3f3+17,90278d+17,90278d+46,90278d+46,dddddd+46,dddddd+69,6b6f74+69 */
+  background: rgb(237, 237, 237); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(237, 237, 237, 1) 17%, rgba(41, 137, 216, 1) 17%, rgba(243, 243, 243, 1) 17%, rgba(144, 39, 141, 1) 17%, rgba(144, 39, 141, 1) 46%, rgba(144, 39, 141, 1) 46%, rgba(221, 221, 221, 1) 46%, rgba(221, 221, 221, 1) 69%, rgba(107, 111, 116, 1) 69%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(237, 237, 237, 1) 17%, rgba(41, 137, 216, 1) 17%, rgba(243, 243, 243, 1) 17%, rgba(144, 39, 141, 1) 17%, rgba(144, 39, 141, 1) 46%, rgba(144, 39, 141, 1) 46%, rgba(221, 221, 221, 1) 46%, rgba(221, 221, 221, 1) 69%, rgba(107, 111, 116, 1) 69%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(237, 237, 237, 1) 17%, rgba(41, 137, 216, 1) 17%, rgba(243, 243, 243, 1) 17%, rgba(144, 39, 141, 1) 17%, rgba(144, 39, 141, 1) 46%, rgba(144, 39, 141, 1) 46%, rgba(221, 221, 221, 1) 46%, rgba(221, 221, 221, 1) 69%, rgba(107, 111, 116, 1) 69%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#6b6f74', GradientType=1); /* IE6-9 */
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+  }
+}
+
+.header-one {
+
+  padding: 50px 0;
+}
+
+.navbar-default .navbar-nav > li {
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+
+  & > a {
+    background-color: $color-grey-lighter;
+
+    &:hover {
+      background-color: $corporate-grey;
+      color: $color-white;
+    }
+  }
+}
+
+.logo-wrapper {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.logo {
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+}
+
+.section-wrapper {
+  padding: 120px 0;
+
+  ///* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&0.45+0,0.85+100 */
+  //background: -moz-linear-gradient(top, rgba(30,87,153,0.45) 0%, rgba(125,185,232,0.85) 100%); /* FF3.6-15 */
+  //background: -webkit-linear-gradient(top, rgba(30,87,153,0.45) 0%,rgba(125,185,232,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+  //background: linear-gradient(to bottom, rgba(30,87,153,0.45) 0%,rgba(125,185,232,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#731e5799', endColorstr='#d97db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.footer {
+  border: 0;
+}
+
+@media (min-width: 768px) {
+
+  .navbar-right {
+    margin-right: 0;
+  }
+}
+
