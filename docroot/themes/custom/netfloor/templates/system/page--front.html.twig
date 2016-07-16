@@ -161,11 +161,18 @@
     </div>
 {% endblock %}
 
-{% if page.footer %}
+
     {% block footer %}
         <div class="ribbon-colors"></div>
         <footer class="footer {{ container }}" role="contentinfo">
-            {{ page.footer }}
+            <div class="row">
+                <div class="col-md-6">
+                    {{ page.footer_left }}
+                </div>
+                <div class="col-md-6">
+                    {{ page.footer_right }}
+                </div>
+            </div>
         </footer>
     {% endblock %}
-{% endif %}
+

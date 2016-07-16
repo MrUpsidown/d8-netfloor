@@ -38,5 +38,9 @@
  */
 #}
 {% for item in items %}
-    <div class="{{ bootstrap_columns }}">{{ item.content }}</div>
+    <div class="{{ bootstrap_columns }}">
+        <div class="content">
+            {{ item.content }}
+        </div>
+    </div>
 {% endfor %}
