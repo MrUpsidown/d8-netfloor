@@ -64,7 +64,7 @@
  */
 #}
 {% set section_highlight = node.field_section_highlight.value ? 'section-highlight' : '' %}
-{% set section_icon = node.field_icon.value ? 'section-icon' : '' %}
+{% set section_icon = node.field_icon.value and node.field_show_title.value ? 'section-icon' : '' %}
 {% set section_parallax = content.field_background ? 'scroll' : '' %}
 {% set section_parallax_class = node.field_background.value ? 'section-wrapper--image' : '' %}
 {% set section_parallax_image = content.field_background ? file_url(content.field_background['#items'].entity.uri.value) : '' %}
@@ -86,7 +86,7 @@ section_icon
                                         data-speed="0.8"
                                         id="{{ node.id }}">
     <div class="container">
-        {% if node.field_icon %}
+        {% if section_icon %}
             <div class="section-icon-wrapper">
                 <i class="ic-{{ node.field_icon.value }}"></i>
             </div>

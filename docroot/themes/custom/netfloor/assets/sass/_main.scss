@@ -16,6 +16,11 @@ body {
   background-color: white;
   margin-top: 0;
   font-size: 18px;
+
+  @media (max-width: 768px) {
+
+    font-size: 15px;
+  }
 }
 
 body.toolbar-tray-open {
@@ -146,11 +151,31 @@ body.toolbar-tray-open {
     @media (max-width: 768px) {
 
       font-size: 28px;
-      margin: 0 0 20px 0;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  [class^="col-"]:not(:last-child) {
+
+    border-right: 1px solid $color-grey-light;
+
+    @media (max-width: 768px) {
+
+      border-right: 0;
+    }
+
+    .content {
+
+      @media (max-width: 768px) {
+
+        padding-bottom: 5px;
+        border-bottom: 1px solid $color-grey-light;
+      }
     }
   }
 
   .content {
+
     margin-bottom: 15px;
 
     ul {
@@ -162,6 +187,11 @@ body.toolbar-tray-open {
         list-style-type: none;
         line-height: 40px;
         padding-left: 10px;
+
+        @media (max-width: 768px) {
+
+          line-height: 25px;
+        }
 
         &:before {
 
@@ -200,12 +230,12 @@ body.toolbar-tray-open {
   background-color: $color-grey-lighter;
 
   .content {
-
     font-size: 24px;
 
     @media (max-width: 768px) {
 
       padding-left: 0;
+      font-size: 18px;
     }
   }
 }
@@ -215,7 +245,18 @@ body.toolbar-tray-open {
   .container {
 
     position: relative;
-    padding-left: 100px;
+  }
+
+
+  h1 {
+
+    padding: 0 0 0 70px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+
+      padding: 0;
+    }
   }
 
   .section-icon-wrapper {
@@ -223,7 +264,12 @@ body.toolbar-tray-open {
     position: absolute;
     top: 0;
     left: 20px;
-    font-size: 60px;
+    font-size: 45px;
+
+    @media (max-width: 768px) {
+
+      display: none;
+    }
   }
 }
 
@@ -239,6 +285,11 @@ body.toolbar-tray-open {
   nav {
     margin-top: 20px;
   }
+}
+
+.footer-wrapper {
+
+  background-color: $color-grey-lighter;
 }
 
 @media (min-width: 768px) {

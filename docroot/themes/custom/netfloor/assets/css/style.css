@@ -23,6 +23,9 @@ body {
   background-color: white;
   margin-top: 0;
   font-size: 18px; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px; } }
 
 body.toolbar-tray-open {
   padding-top: 80px; }
@@ -103,7 +106,16 @@ body.toolbar-tray-open {
     @media (max-width: 768px) {
       .section-wrapper h1 {
         font-size: 28px;
-        margin: 0 0 20px 0; } }
+        margin: 0 0 10px 0; } }
+  .section-wrapper [class^="col-"]:not(:last-child) {
+    border-right: 1px solid #ddd; }
+    @media (max-width: 768px) {
+      .section-wrapper [class^="col-"]:not(:last-child) {
+        border-right: 0; } }
+    @media (max-width: 768px) {
+      .section-wrapper [class^="col-"]:not(:last-child) .content {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #ddd; } }
   .section-wrapper .content {
     margin-bottom: 15px; }
     .section-wrapper .content ul {
@@ -112,6 +124,9 @@ body.toolbar-tray-open {
         list-style-type: none;
         line-height: 40px;
         padding-left: 10px; }
+        @media (max-width: 768px) {
+          .section-wrapper .content ul li {
+            line-height: 25px; } }
         .section-wrapper .content ul li:before {
           content: "\e905";
           font-family: net-icons;
@@ -119,7 +134,7 @@ body.toolbar-tray-open {
           left: 20px; }
   .section-wrapper--image {
     min-height: 400px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.25);
     color: #fff; }
     @media (max-width: 768px) {
       .section-wrapper--image {
@@ -134,16 +149,25 @@ body.toolbar-tray-open {
     font-size: 24px; }
     @media (max-width: 768px) {
       .section-highlight .content {
-        padding-left: 0; } }
+        padding-left: 0;
+        font-size: 18px; } }
 
 .section-icon .container {
-  position: relative;
-  padding-left: 100px; }
+  position: relative; }
+.section-icon h1 {
+  padding: 0 0 0 70px;
+  margin-bottom: 20px; }
+  @media (max-width: 768px) {
+    .section-icon h1 {
+      padding: 0; } }
 .section-icon .section-icon-wrapper {
   position: absolute;
   top: 0;
   left: 20px;
-  font-size: 60px; }
+  font-size: 45px; }
+  @media (max-width: 768px) {
+    .section-icon .section-icon-wrapper {
+      display: none; } }
 
 .footer {
   border: 0; }
@@ -152,6 +176,9 @@ body.toolbar-tray-open {
       margin-top: 0; } }
   .footer nav {
     margin-top: 20px; }
+
+.footer-wrapper {
+  background-color: #f3f3f3; }
 
 @media (min-width: 768px) {
   .navbar-right {
