@@ -1,0 +1,18 @@
+uuid: 6ef349b6-8023-438b-98ea-713dea6abed0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Section
+type: section
+description: 'One-page section.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

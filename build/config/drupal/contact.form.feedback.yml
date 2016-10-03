@@ -1,0 +1,12 @@
+uuid: 11820167-c431-4f16-8a37-3f28ebe2ce1e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - arnaud.marquis@bluewin.ch
+reply: ''
+weight: 0

@@ -1,0 +1,21 @@
+uuid: 3c1573f2-d221-4ff0-bec5-882a62cce935
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon
+    - node.type.section
+  module:
+    - options
+id: node.section.field_icon
+field_name: field_icon
+entity_type: node
+bundle: section
+label: Icon
+description: 'The icon to show in the left margin of the title. The show title field above must be checked.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

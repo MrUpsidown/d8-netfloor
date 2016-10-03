@@ -1,0 +1,21 @@
+uuid: b42b9e86-c2c8-435a-b687-b181f8f85a7d
+langcode: fr
+status: true
+dependencies: {  }
+id: content_manager
+label: 'Content manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'use text format restricted_html'
+  - 'access content overview'
+  - 'create section content'
+  - 'delete any section content'
+  - 'delete own section content'
+  - 'delete section revisions'
+  - 'edit any section content'
+  - 'edit own section content'
+  - 'revert section revisions'
+  - 'view section revisions'
+  - 'access site in maintenance mode'
+  - 'access site reports'

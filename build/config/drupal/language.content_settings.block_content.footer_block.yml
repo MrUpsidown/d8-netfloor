@@ -1,0 +1,16 @@
+uuid: d07de847-2b26-45b9-a690-7a13194568b5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.footer_block
+target_entity_type_id: block_content
+target_bundle: footer_block
+default_langcode: site_default
+language_alterable: true

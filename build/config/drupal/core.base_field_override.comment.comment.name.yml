@@ -1,0 +1,20 @@
+uuid: 7ea1e0b5-e0fe-4bf2-b9ee-e68a8b72a809
+langcode: fr
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.name
+field_name: name
+entity_type: comment
+bundle: comment
+label: Nom
+description: 'Le nom de l''auteur du commentaire.'
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

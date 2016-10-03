@@ -178,6 +178,7 @@ body.toolbar-tray-open {
     margin-top: 20px; }
 
 .footer-wrapper {
+  margin-top: 20px;
   background-color: #f3f3f3; }
 
 @media (min-width: 768px) {

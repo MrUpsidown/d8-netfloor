@@ -1,0 +1,65 @@
+uuid: 5d5e0d15-3b53-4a14-98f7-6e303507acc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.section.field_background
+    - field.field.node.section.field_column
+    - field.field.node.section.field_icon
+    - field.field.node.section.field_section_highlight
+    - field.field.node.section.field_show_title
+    - field.field.node.section.field_weight
+    - node.type.section
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.section.default
+targetEntityType: node
+bundle: section
+mode: default
+content:
+  field_background:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_column:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_icon:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_section_highlight:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_show_title:
+    weight: 104
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  links:
+    weight: 100
+hidden:
+  field_weight: true
+  langcode: true

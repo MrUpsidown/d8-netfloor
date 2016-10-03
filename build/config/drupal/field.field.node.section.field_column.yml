@@ -1,0 +1,21 @@
+uuid: 1be16ee5-95a5-499d-ac27-c0943be2ec91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_column
+    - node.type.section
+  module:
+    - text
+id: node.section.field_column
+field_name: field_column
+entity_type: node
+bundle: section
+label: Column
+description: 'A column in the section.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

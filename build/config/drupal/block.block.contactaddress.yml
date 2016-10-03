@@ -1,0 +1,25 @@
+uuid: 202eda44-f035-411c-8ec8-ae9aba2df26d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block:e0496394-a140-4dfd-821c-a355f5c9d599'
+  module:
+    - block_content
+  theme:
+    - netfloor
+id: contactaddress
+theme: netfloor
+region: footer_left
+weight: -7
+provider: null
+plugin: 'block_content:e0496394-a140-4dfd-821c-a355f5c9d599'
+settings:
+  id: 'block_content:e0496394-a140-4dfd-821c-a355f5c9d599'
+  label: 'Contact address'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

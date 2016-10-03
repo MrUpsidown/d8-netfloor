@@ -1,0 +1,45 @@
+uuid: 840875c2-ee07-4591-8fa9-e2efe37d002a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_icon
+field_name: field_icon
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bucket
+      label: Nettoyage
+    -
+      value: tree
+      label: Nature
+    -
+      value: layers
+      label: Sols
+    -
+      value: quote
+      label: Citation
+    -
+      value: checkmark
+      label: Ok
+    -
+      value: arrow-right
+      label: Flèche
+    -
+      value: heart
+      label: Love
+    -
+      value: cog
+      label: Roue
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

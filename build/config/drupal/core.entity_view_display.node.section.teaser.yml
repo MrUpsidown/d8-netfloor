@@ -1,0 +1,30 @@
+uuid: a040e08d-fb05-428c-b152-38cb26667576
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.section.field_background
+    - field.field.node.section.field_column
+    - field.field.node.section.field_icon
+    - field.field.node.section.field_section_highlight
+    - field.field.node.section.field_show_title
+    - field.field.node.section.field_weight
+    - node.type.section
+  module:
+    - user
+id: node.section.teaser
+targetEntityType: node
+bundle: section
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_background: true
+  field_column: true
+  field_icon: true
+  field_section_highlight: true
+  field_show_title: true
+  field_weight: true
+  langcode: true

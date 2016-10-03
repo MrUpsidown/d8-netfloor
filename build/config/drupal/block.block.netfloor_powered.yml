@@ -1,0 +1,22 @@
+uuid: cf8adb83-1d06-45ba-9b00-7bad8e183ced
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - netfloor
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: netfloor_powered
+theme: netfloor
+region: '-1'
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

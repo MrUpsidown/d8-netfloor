@@ -1,0 +1,18 @@
+uuid: 955dc8e2-6e18-475a-b449-fd37705df931
+langcode: fr
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.created
+field_name: created
+entity_type: comment
+bundle: comment
+label: Créé(e)
+description: 'L''heure de création du commentaire.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

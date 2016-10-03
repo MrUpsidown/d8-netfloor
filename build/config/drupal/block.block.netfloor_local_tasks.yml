@@ -1,0 +1,22 @@
+uuid: 7ff41ea2-5acb-4180-888a-7ae9e7f19856
+langcode: en
+status: true
+dependencies:
+  theme:
+    - netfloor
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: netfloor_local_tasks
+theme: netfloor
+region: header
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
