@@ -15,9 +15,36 @@ function netfloor_preprocess_node(&$variables) {
 
 }
 
-function netfloor_preprocess_field(&$variables, $hook) {
+function netfloor_preprocess_page(&$variables) {
 
-//  kint($variables);
+  global $base_url;
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', 'section')
+    ->condition('field_show_title', TRUE, '=')
+    ->condition('langcode', $language)
+    ->sort('field_weight', 'asc');
+
+  $nids = $query->execute();
+  $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+
+  $buttons = [];
+
+  foreach ($nodes as $node) {
+
+    $buttons[] = [
+      'title' => $node->getTitle(),
+      'path' => $base_url . '/' . $language . '/#' . $node->id()
+    ];
+  }
+
+  $variables['buttons'] = $buttons;
+}
+
+function netfloor_preprocess_field(&$variables, $hook) {
 
   $count = count($variables['items']);
 
@@ -37,6 +64,6 @@ function netfloor_preprocess_field(&$variables, $hook) {
       break;
   }
 
-  $variables['bootstrap_columns'] = 'col-sm-' . $bootstrap_columns;
+  $variables['bootstrap_columns'] = 'section-col col-sm-' . $bootstrap_columns;
   $variables['bootstrap_columns_count'] = $count;
 }

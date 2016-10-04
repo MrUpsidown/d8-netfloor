@@ -89,12 +89,21 @@
                     {% endif %}
                 </div>
 
-                {# Navigation (collapsible) #}
-                {% if page.navigation_collapsible %}
-                    <div class="navbar-collapse collapse">
-                        {{ page.navigation_collapsible }}
+                <div class="navbar-collapse collapse">
+                    <div class="{{ container }}">
+                        <div class="row">
+                            <nav role="navigation">
+                                <ul class="menu nav navbar-nav">
+                                    {% for button in buttons %}
+                                        <li>
+                                            <a href="{{ button.path }}">{{ button.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                {% endif %}
+                </div>
             </header>
         {% endblock %}
     {% endif %}
@@ -112,17 +121,22 @@
 {# Main #}
 {% block main %}
     <div role="main" class="main-container js-quickedit-main-content">
-        {# Header #}
-        {% if page.header %}
-            {% block header %}
-                <div class="col-sm-12" role="heading">
-                    {{ page.header }}
-                </div>
-            {% endblock %}
-        {% endif %}
 
         {# Content #}
         <section{{ content_attributes }}>
+
+            {# Header #}
+            {% if page.header %}
+                {% block header %}
+                    <div class="{{ container }}">
+                        <div class="row">
+                            <div class="col-sm-12" role="heading">
+                                {{ page.header }}
+                            </div>
+                        </div>
+                    </div>
+                {% endblock %}
+            {% endif %}
 
             {# Highlighted #}
             {% if page.highlighted %}

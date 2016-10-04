@@ -65,6 +65,7 @@
 #}
 {% set section_highlight = node.field_section_highlight.value ? 'section-highlight' : '' %}
 {% set section_icon = node.field_icon.value and node.field_show_title.value ? 'section-icon' : '' %}
+{% set section_icon_notitle = node.field_icon.value and not node.field_show_title.value ? 'section-icon-notitle' : '' %}
 {% set section_parallax = content.field_background ? 'scroll' : '' %}
 {% set section_parallax_class = node.field_background.value ? 'section-wrapper--image' : '' %}
 {% set section_parallax_image = content.field_background ? file_url(content.field_background['#items'].entity.uri.value) : '' %}
@@ -79,12 +80,18 @@ view_mode ? view_mode|clean_class,
 'section-wrapper',
 section_parallax_class,
 section_highlight,
-section_icon
+section_icon,
+section_icon_notitle
 ] %}
 <div {{ attributes.addClass(classes) }} data-parallax="{{ section_parallax }}"
                                         data-image-src="{{ section_parallax_image }}"
                                         data-speed="0.8"
                                         id="{{ node.id }}">
+    {% if section_icon_notitle %}
+        <div class="section-icon-wrapper">
+            <i class="ic-{{ node.field_icon.value }}"></i>
+        </div>
+    {% endif %}
     <div class="container">
         {% if section_icon %}
             <div class="section-icon-wrapper">
@@ -99,7 +106,9 @@ section_icon
             </div>
         {% endif %}
         <div class="row one-page">
+
             {{ content.field_column }}
         </div>
     </div>
+
 </div>

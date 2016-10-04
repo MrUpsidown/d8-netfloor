@@ -247,7 +247,6 @@ body.toolbar-tray-open {
     position: relative;
   }
 
-
   h1 {
 
     padding: 0 0 0 70px;
@@ -273,6 +272,23 @@ body.toolbar-tray-open {
   }
 }
 
+.section-icon-notitle {
+
+  .section-icon-wrapper {
+
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    font-size: 120px;
+    opacity: .2;
+
+    @media (max-width: 768px) {
+
+      display: none;
+    }
+  }
+}
+
 .footer {
 
   border: 0;
@@ -289,14 +305,34 @@ body.toolbar-tray-open {
 
 .footer-wrapper {
 
-  margin-top: 20px;
   background-color: $color-grey-lighter;
+}
+
+body:not(.path-frontpage) {
+  .footer-wrapper {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 768px) {
 
   .navbar-right {
     margin-right: 0;
+  }
+
+  .navbar-collapse {
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+
+  header.container {
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

@@ -169,6 +169,16 @@ body.toolbar-tray-open {
     .section-icon .section-icon-wrapper {
       display: none; } }
 
+.section-icon-notitle .section-icon-wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  font-size: 120px;
+  opacity: .2; }
+  @media (max-width: 768px) {
+    .section-icon-notitle .section-icon-wrapper {
+      display: none; } }
+
 .footer {
   border: 0; }
   @media (max-width: 768px) {
@@ -178,11 +188,21 @@ body.toolbar-tray-open {
     margin-top: 20px; }
 
 .footer-wrapper {
-  margin-top: 20px;
   background-color: #f3f3f3; }
+
+body:not(.path-frontpage) .footer-wrapper {
+  margin-top: 20px; }
 
 @media (min-width: 768px) {
   .navbar-right {
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0; } }
+@media (min-width: 992px) {
+  header.container {
+    padding-left: 0;
+    padding-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
