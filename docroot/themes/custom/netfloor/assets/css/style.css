@@ -78,13 +78,15 @@ body.toolbar-tray-open {
 
 .logo-wrapper {
   text-align: center;
-  margin: 100px 0; }
+  margin: 100px 0;
+  padding: 0 10px; }
   @media (max-width: 768px) {
     .logo-wrapper {
       margin: 40px 0; } }
 
 .logo img {
-  max-width: 350px;
+  width: 350px;
+  max-width: 100%;
   height: auto; }
 
 .navbar-default {

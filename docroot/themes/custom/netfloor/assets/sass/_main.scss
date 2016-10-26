@@ -102,6 +102,7 @@ body.toolbar-tray-open {
 
   text-align: center;
   margin: 100px 0;
+  padding: 0 10px;
 
   @media (max-width: 768px) {
 
@@ -113,7 +114,8 @@ body.toolbar-tray-open {
 
   img {
 
-    max-width: 350px;
+    width: 350px;
+    max-width: 100%;
     height: auto;
   }
 }
