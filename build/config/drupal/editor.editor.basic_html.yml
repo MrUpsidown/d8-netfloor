@@ -42,6 +42,7 @@ settings:
         -
           name: Tools
           items:
+            - DrupalImage
             - Source
   plugins:
     language:
