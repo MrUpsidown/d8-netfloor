@@ -99,6 +99,11 @@
                                             <a href="{{ button.path }}">{{ button.title }}</a>
                                         </li>
                                     {% endfor %}
+                                    {% if logged_in %}
+                                        <li>
+                                            <a href="/admin/content" class="admin">{{ 'Administration' | t }}</a>
+                                        </li>
+                                    {% endif %}
                                 </ul>
                             </nav>
                         </div>

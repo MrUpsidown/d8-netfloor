@@ -69,6 +69,9 @@ body.toolbar-tray-open {
       margin-right: 0; } }
 .navbar-default .navbar-nav > li > a {
   background-color: #f3f3f3; }
+  .navbar-default .navbar-nav > li > a.admin {
+    color: #fff;
+    background-color: #90278d; }
   .navbar-default .navbar-nav > li > a:hover {
     background-color: #6b6f74;
     color: #fff; }
@@ -81,7 +84,7 @@ body.toolbar-tray-open {
       margin: 40px 0; } }
 
 .logo img {
-  max-width: 200px;
+  max-width: 350px;
   height: auto; }
 
 .navbar-default {
@@ -177,6 +180,14 @@ body.toolbar-tray-open {
   opacity: .2; }
   @media (max-width: 768px) {
     .section-icon-notitle .section-icon-wrapper {
+      display: none; } }
+
+.section-col img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto; }
+  @media (max-width: 768px) {
+    .section-col img {
       display: none; } }
 
 .footer {

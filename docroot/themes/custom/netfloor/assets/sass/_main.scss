@@ -85,6 +85,11 @@ body.toolbar-tray-open {
 
     background-color: $color-grey-lighter;
 
+    &.admin {
+      color: $color-white;
+      background-color: $corporate-color;
+    }
+
     &:hover {
 
       background-color: $corporate-grey;
@@ -108,7 +113,7 @@ body.toolbar-tray-open {
 
   img {
 
-    max-width: 200px;
+    max-width: 350px;
     height: auto;
   }
 }
@@ -281,6 +286,20 @@ body.toolbar-tray-open {
     right: 50px;
     font-size: 120px;
     opacity: .2;
+
+    @media (max-width: 768px) {
+
+      display: none;
+    }
+  }
+}
+
+.section-col {
+
+  img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
 
     @media (max-width: 768px) {
 
