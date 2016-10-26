@@ -129,16 +129,20 @@ body.toolbar-tray-open {
 
 .section-wrapper {
 
-  padding: 80px 0;
+  .section-background {
 
-  @media (max-width: 1199px) {
+    min-height: 400px;
+    padding: 80px 0;
 
-    padding: 60px 0;
-  }
+    @media (max-width: 1199px) {
 
-  @media (max-width: 768px) {
+      padding: 60px 0;
+    }
 
-    padding: 20px 0;
+    @media (max-width: 768px) {
+
+      padding: 20px 0;
+    }
   }
 
   ///* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&0.45+0,0.85+100 */
@@ -213,20 +217,21 @@ body.toolbar-tray-open {
 
   &--image {
 
-    min-height: 400px;
-    background-color: $color-black-opacity;
-
     color: $color-white;
 
-    @media (max-width: 768px) {
+    .section-background {
 
-      min-height: 300px;
+      background-color: rgba(0,0,0,.3);
+
+      @media (max-width: 768px) {
+
+        min-height: 300px;
+      }
     }
 
     h1 {
 
       color: $color-white;
-      //background-color: $color-black-opacity;
       margin: 0 0 20px 0;
     }
   }

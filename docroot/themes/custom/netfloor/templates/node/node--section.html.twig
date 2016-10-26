@@ -87,28 +87,29 @@ section_icon_notitle
                                         data-image-src="{{ section_parallax_image }}"
                                         data-speed="0.8"
                                         id="{{ node.id }}">
-    {% if section_icon_notitle %}
-        <div class="section-icon-wrapper">
-            <i class="ic-{{ node.field_icon.value }}"></i>
-        </div>
-    {% endif %}
-    <div class="container">
-        {% if section_icon %}
+    <div class="section-background">
+        {% if section_icon_notitle %}
             <div class="section-icon-wrapper">
                 <i class="ic-{{ node.field_icon.value }}"></i>
             </div>
         {% endif %}
-        {% if node.field_show_title.value %}
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>{{ label }}</h1>
+        <div class="container">
+            {% if section_icon %}
+                <div class="section-icon-wrapper">
+                    <i class="ic-{{ node.field_icon.value }}"></i>
                 </div>
-            </div>
-        {% endif %}
-        <div class="row one-page">
+            {% endif %}
+            {% if node.field_show_title.value %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>{{ label }}</h1>
+                    </div>
+                </div>
+            {% endif %}
+            <div class="row one-page">
 
-            {{ content.field_column }}
+                {{ content.field_column }}
+            </div>
         </div>
     </div>
-
 </div>
