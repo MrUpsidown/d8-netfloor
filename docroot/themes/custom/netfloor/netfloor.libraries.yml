@@ -4,7 +4,7 @@ global-styling:
       assets/css/style.css: {}
       assets/css/icomoon/style.css: {}
   js:
-    assets/js/parallax.min.js: {}
+    assets/js/parallax150.min.js: {}
     assets/js/netfloor.theme.js: {}
   dependencies:
         - core/jquery
